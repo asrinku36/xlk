@@ -10,7 +10,7 @@ function getTitle() {
 }
 
 function getImage() {
-    $defaultImage = 'picture/default_image.jpg';
+    $defaultImage = 'https://xlek.netlify.app/picture/default_image.jpg';
     if (isset($_GET['p'])) {
         $imageName = strtolower(htmlspecialchars($_GET['p'])) . '.jpg';
         $imagePath = 'picture/' . $imageName;
